@@ -4,8 +4,10 @@ number = random.randint(-10000, 10000)
 if number > 0:
     value = number % 10
 elif number < 0:
-    temp = -number 
-    value = temp % 10
+    temp = -number
+    value = -(temp % 10)
+else:
+    value = number
 var = "Last digit of"
 while value:
     if value > 5:
