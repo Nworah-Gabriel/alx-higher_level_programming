@@ -5,11 +5,9 @@ if number > 0:
     value = number % 10
 elif number < 0:
     temp = -number
-    value = -(temp 
-            % 10)
+    value = -(temp % 10)
 elif number == 0:
     value = 0
-    print(value)
 var = "Last digit of"
 while True:
     if value > 5:
