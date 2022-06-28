@@ -6,11 +6,12 @@ if number > 0:
 elif number < 0:
     temp = -number 
     value = temp % 10
-While value:
-    Var = "Last digit of"
+var = "Last digit of"
+while value:
     if value > 5:
         print(f"Last digit of {number:d} is {value:d} and is greater than 5")
     elif value == 0:
         print(f"Last digit of {number:d} is {value:d} and is 0")
     elif value < 6 and not 0:
         print(f"{var} {number:d} is {value:d} and is less than 6 and not 0")
+    break
