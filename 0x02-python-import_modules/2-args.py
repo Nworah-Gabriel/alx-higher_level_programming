@@ -8,9 +8,9 @@ if __name__ == '__main__':
     if j > 1:
         print("{:d} arguments:".format(j))
     elif j == 0:
-        prrint(".")
+        print("{} arguments.".format(j))
     elif j == 1:
         print("{:d} argument:".format(j))
-    while i != (j + 1):
-        print("{}: {}".format(i, argv[i]))
+    for arg in argv:
+        print("{}: {}".format(i, arg))
         i += 1
