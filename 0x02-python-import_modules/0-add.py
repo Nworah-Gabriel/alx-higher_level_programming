@@ -4,4 +4,4 @@ if __name__ == '__main__':
     a = 1
     b = 2
     add = add_module.add(a, b)
-    print("{:d} + {:d} = {:d}\n".format(a, b, add))
+    print("{:1d} + {:1d} = {:1d}".format(a, b, add))
