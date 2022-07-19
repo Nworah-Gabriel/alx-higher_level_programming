@@ -3,4 +3,4 @@
 <ul>
 <li>my practice on python classes</li>
 <li>Alx assessments</li>
-</up>
+</ul>
