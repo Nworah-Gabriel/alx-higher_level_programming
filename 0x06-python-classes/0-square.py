@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+an empty class Square
+that defines a square
+"""
+
 
 class Square:
-    def __init__(self, suare="square"):
-        srlf.suare = suare
+    """a Class Square
+    """
+    pass
