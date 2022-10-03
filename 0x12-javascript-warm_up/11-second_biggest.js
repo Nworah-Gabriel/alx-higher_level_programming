@@ -1,27 +1,29 @@
 #!/usr/bin/node
 
 function max (array) {
-  let max_int = array[0];
-  for (let i = 0; array[i] != null; i++) {
-    if (array[i] > max_int) {
-	    max_int = i;
-    } else {
-    return (i);
+  let MaxInt = 0;
+  for (const i of array) {
+    if (i > MaxInt) {
+      MaxInt = i;
     }
   }
+  return (MaxInt);
 }
 
-let myarray = [];
+const myarray = [];
 if (process.argv.length <= 3) {
-	console.log(0);
+  console.log(0);
 } else {
   for (let i = 2; i < process.argv.length; i++) {
     myarray.push(Number(process.argv[i]));
   }
 }
-const max_int = max(myarray);
-console.log(myarray[max_int])
-myarray.pop(max_int);
-const max_int2 = max(myarray);
-console.log(myarray[max_int2]);
-
+const MaxInt = max(myarray);
+for (let i = 0; myarray[i] != null; i++) {
+  if (myarray[i] === MaxInt) {
+    delete myarray[i];
+    break;
+  }
+}
+const MaxInt2 = max(myarray);
+console.log(MaxInt2);
